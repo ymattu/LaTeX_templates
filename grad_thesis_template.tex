@@ -1,0 +1,101 @@
+\documentclass[11pt]{jsarticle}
+
+\usepackage{url}
+\usepackage{natbib}
+\usepackage{color}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{here}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{multirow}
+%\usepackage{tabudlarx}
+\usepackage{latexsym}
+
+\usepackage{mathrsfs}%花文字のため
+
+%argmax,argmin の定義
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+
+
+\title{タイトル \\ 長いときは改行}
+\author{学籍番号 1111111 \\ ymattu}
+\date{2017 年 2 月 3 日}
+
+\begin{document}
+
+
+%%% 表紙（タイトルページ）はじまり %%%
+\begin{titlepage}
+\begin{center}
+
+ \LARGE{ 卒業論文} \hspace{\fill} \LARGE{2020 年度}\\
+
+  \vspace{3cm}
+ {\fontsize{20pt}{20pt}\selectfont
+    タイトル \\ 長いときは改行
+  % vspace*{0.5cm}
+  }\\ % 副題を書く
+
+  \vspace{2.5cm}
+ {\fontsize{20pt}{20pt}\selectfont  ymattu} \\
+ \LARGE{(学籍番号：1111111)} \\
+  \vspace{3.5cm}
+ \LARGE{指導教員　教授　大 魔神} \\
+  \vspace{2cm}
+ \LARGE{慶應義塾大学経済学部} \\
+ \LARGE{経済学科} \\
+
+\end{center}
+\end{titlepage}
+
+
+\newpage
+ \thispagestyle{empty}
+
+\begin{abstract}
+ 要旨をコピペでいいんじゃない？
+\end{abstract}
+
+\begin{center}
+ キーワード: なんか、あれば
+\end{center}
+
+\newpage
+% 目次
+
+ \pagenumbering{roman}
+ % setcounter{tocdepth}{3} %subsubsection まで目次に表示
+\tableofcontents
+
+\newpage
+% 図表目次
+\listoffigures
+\listoftables
+
+\newpage
+ \pagenumbering{arabic}
+ \setcounter{page}{1}
+
+\section{はじめに}
+
+\section{先行研究}
+\citet{rosenbaum1983central}によると
+
+\section{モデル}
+
+\section{実証分析}
+
+\section{まとめ}
+
+
+\newpage
+\bibliographystyle{jecon}
+\bibliography{sample}
+
+\end{document}
+
+
